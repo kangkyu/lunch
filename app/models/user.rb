@@ -9,4 +9,5 @@ class User < ActiveRecord::Base
 
   has_many :suggestions
   has_many :restaurants, through: :suggestions
+  has_one :vote
 end
